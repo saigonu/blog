@@ -25,9 +25,3 @@ However, this same quality can sometimes be a double-edged sword. The constant f
 2. Difficulty in maintaining focus on long-term goals
 3. Occasional overwhelm from trying to pursue too many ideas at once
 4. The challenge of deciding which inspirations to act on and which to let go
-
-```JavaScript
-var add2 = function(number) {
- return number + 2;
-}
-```
