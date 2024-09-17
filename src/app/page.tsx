@@ -13,7 +13,7 @@ export default function Index() {
         {/* Main message */}
         <div className="py-16 sm:text-center">
           <h1 className="mb-4 text-3xl sm:text-4xl tracking-tight text-white font-extrabold font-poppins">
-            Sai Gonuguntla
+            Sai's Blog
           </h1>
           <h2 className="text-lg text-gray-400">
             I try to show my passion about all things technology through writing here.
