@@ -84,3 +84,27 @@
     @apply bg-background text-foreground;
   }
 }
+
+pre code {
+  border-radius: 4px;
+  padding: 24px !important;
+}
+
+code,
+code::after,
+code::before {
+  font-size: 0.9em;
+  color: rgb(212, 0, 255);
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+code::after,
+code::before {
+  content: "`";
+}
+
+pre code::after,
+pre code::before {
+  content: none;
+}
