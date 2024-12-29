@@ -26,7 +26,7 @@ const Nav = () => {
       <motion.div
         className={`z-[999] fixed top-0 left-1/2 transform -translate-x-1/2 w-full md:w-[50rem] flex flex-row justify-between items-center text-white px-4 py-4 md:py-6 rounded-md transition-all ${
           scrollY > 50
-            ? "bg-white/30 backdrop-blur-md dark:bg-[#2e1065]/30" // Apply transparency and blur on scroll
+            ? "bg-white/30 backdrop-blur-md dark:bg-[#262626]/30" // Apply transparency and blur on scroll
             : "bg-transparent"
         }`}
       >
