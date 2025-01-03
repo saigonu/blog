@@ -26,7 +26,7 @@ const Nav = () => {
       <motion.div
         className={`z-[999] fixed top-0 left-1/2 transform -translate-x-1/2 w-full md:w-[50rem] flex flex-row justify-between items-center text-white px-4 py-4 md:py-6 rounded-md transition-all ${
           scrollY > 50
-            ? "bg-white/30 backdrop-blur-md dark:bg-[#262626]/30" // Apply transparency and blur on scroll
+            ? "bg-white/30 backdrop-blur-md dark:bg-[#0d0d0d]/30" // Apply transparency and blur on scroll
             : "bg-transparent"
         }`}
       >
@@ -35,7 +35,7 @@ const Nav = () => {
           <div className="flex flex-row items-center gap-6">
             <Link
               href="https://saig.vercel.app/"
-              className="text-white hover:text-gray-300 font-poppins"
+              className="text-white hover:text-gray-300 font-instrument"
             >
               Sai Gonuguntla
             </Link>
@@ -66,7 +66,7 @@ const Nav = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.1, ease: "easeInOut" }}
-              className="flex flex-col items-center justify-start mt-16 fixed w-full h-auto z-[700] bg-white dark:bg-[#2e1065] border-x border-b text-white border-slate-800/10"
+              className="flex flex-col items-center justify-start mt-16 fixed w-full h-auto z-[700] bg-white dark:bg-[#0d0d0d] border-x border-b text-white border-slate-800/10"
             >
               <div className="flex flex-row w-full text-white justify-evenly py-4">
                 <Link

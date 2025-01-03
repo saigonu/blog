@@ -22,7 +22,6 @@ export default async function Post({ params }: Params) {
       <Header />
       <Container>
         <div className="grid grid-cols-5 gap-6 md:gap-12 pt-32">
-
           {/* left sidebar */}
           <div className="col-span-5 md:col-span-1">
             <div className="pt-8">
@@ -41,12 +40,10 @@ export default async function Post({ params }: Params) {
           </div>
 
           {/* right sidebar */}
-          <div className="col-span-5 md:col-span-1" >
-          </div>
-
+          <div className="col-span-5 md:col-span-1"></div>
         </div>
       </Container>
-    </main >
+    </main>
   );
 }
 
@@ -63,7 +60,7 @@ export function generateMetadata({ params }: Params): Metadata {
     return notFound();
   }
 
-  const title = `${post.title} | Sai's Blog`;
+  const title = `${post.title} | Sai Gonuguntla - Blog`;
 
   return {
     title,

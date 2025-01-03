@@ -12,7 +12,7 @@ export default function Index() {
       <Container>
         {/* Main message */}
         <div className="py-16 sm:text-center">
-          <h1 className="mb-4 text-5xl sm:text-5xl tracking-tight text-white font-extrabold font-poppins">
+          <h1 className="mb-4 text-5xl sm:text-5xl tracking-tight text-white font-extrabold font-instrument italic">
             Blog
           </h1>
           <h2 className="text-lg text-gray-400">

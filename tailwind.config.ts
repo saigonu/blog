@@ -17,7 +17,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         karla: ['Karla', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        instrument: ['Instrument', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
