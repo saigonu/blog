@@ -35,11 +35,11 @@ const Nav = () => {
           <div className="flex flex-row items-center gap-6">
             <Link
               href="https://saig.vercel.app/"
-              className="text-white hover:text-gray-300 font-instrument"
+              className="text-gray-300 hover:text-white italic font-instrument"
             >
               Sai Gonuguntla
             </Link>
-            <Link href="/" className="text-white hover:text-gray-300">
+            <Link href="/" className="text-gray-300 hover:text-white">
               Home
             </Link>
           </div>

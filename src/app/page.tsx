@@ -2,16 +2,41 @@ import Container from "@/app/_components/container";
 import { getAllPosts } from "@/lib/api";
 import Header from "@/app/_components/header";
 import { PostPreview } from "@/app/_components/post-preview";
+import { StarsBackground } from "./_components/ui/stars-background";
+import { ShootingStars } from "./_components/ui/shooting-stars";
 
 export default function Index() {
   const allPosts = getAllPosts();
 
   return (
     <main>
+      {/* Stars Background */}
+      <StarsBackground
+        starDensity={0.001}
+        allStarsTwinkle={true}
+        twinkleProbability={0.7}
+        minTwinkleSpeed={0.5}
+        maxTwinkleSpeed={1}
+        className="absolute inset-0 z-0"
+      />
+
+      {/* Shooting Stars Background */}
+      <ShootingStars
+        minSpeed={10}
+        maxSpeed={30}
+        minDelay={1200}
+        maxDelay={4200}
+        starColor="#FFFFFF"
+        trailColor="#FFFFFF"
+        starWidth={10}
+        starHeight={1}
+        className="absolute inset-0 z-10"
+      />
+
       <Header />
       <Container>
         {/* Main message */}
-        <div className="py-16 sm:text-center">
+        <div className="py-16 sm:text-center relative z-20">
           <h1 className="mb-4 text-5xl sm:text-5xl tracking-tight text-white font-extrabold font-instrument italic">
             Blog
           </h1>
@@ -22,7 +47,7 @@ export default function Index() {
         </div>
 
         {/* Posts */}
-        <div className="relative sm:pb-12 max-w-xl mx-auto">
+        <div className="relative sm:pb-12 max-w-xl mx-auto z-20">
           {/* vertical line */}
           <div className="hidden absolute top-3 bottom-0 right-full mr-7 md:mr-[3.25rem] w-px bg-slate-200 sm:block" />
 
