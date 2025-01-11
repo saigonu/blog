@@ -57,29 +57,6 @@ export default function RootLayout({
       </head>
       <body>
         <div className="relative min-h-screen">
-          {/* Stars Background */}
-          <StarsBackground
-            starDensity={0.001}
-            allStarsTwinkle={true}
-            twinkleProbability={0.7}
-            minTwinkleSpeed={0.5}
-            maxTwinkleSpeed={1}
-            className="absolute inset-0 z-0"
-          />
-
-          {/* Shooting Stars Background */}
-          <ShootingStars
-            minSpeed={10}
-            maxSpeed={30}
-            minDelay={1200}
-            maxDelay={4200}
-            starColor="#FFFFFF"
-            trailColor="#FFFFFF"
-            starWidth={10}
-            starHeight={1}
-            className="absolute inset-0 z-10"
-          />
-
           {/* Page Content */}
           <div className="relative z-20">{children}</div>
         </div>

@@ -1,10 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Correct hook for App Router
 import { useState, useEffect } from "react";
 
 const Nav = () => {
   const [mobileMenuOpen, setMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const pathname = usePathname(); // Get current path
 
   const toggleMenu = () => {
     setMenuOpen((old) => !old);
@@ -33,15 +35,22 @@ const Nav = () => {
         {/* Navbar links */}
         <div className="flex flex-row items-center justify-between w-full">
           <div className="flex flex-row items-center gap-6">
-            <Link
+            {/* <Link
               href="https://saig.vercel.app/"
               className="text-gray-300 hover:text-white italic font-instrument"
             >
               Sai Gonuguntla
-            </Link>
-            <Link href="/" className="text-gray-300 hover:text-white">
+            </Link> */}
+            {/* <Link
+              href="/"
+              className={`${
+                pathname === "/"
+                  ? "text-white"
+                  : "text-gray-300 hover:text-white"
+              }`}
+            >
               Home
-            </Link>
+            </Link> */}
           </div>
         </div>
       </motion.div>

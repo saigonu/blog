@@ -1,4 +1,4 @@
-type IconProps = React.HTMLAttributes<SVGElement>
+type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   gitHub: (props: IconProps) => (
@@ -10,10 +10,7 @@ export const Icons = {
     </svg>
   ),
   dot: (props: IconProps) => (
-    <svg
-      viewBox="0 0 9 9"
-      {...props}
-    >
+    <svg viewBox="0 0 9 9" {...props}>
       <circle
         cx="4.5"
         cy="4.5"
@@ -38,5 +35,20 @@ export const Icons = {
     >
       <path d="M0 0L3 3L0 6"></path>
     </svg>
-  )
-}
+  ),
+  leftArrow: (props: IconProps) => (
+    <svg
+      width="3"
+      height="6"
+      viewBox="0 0 3 6"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M3 0L0 3L3 6"></path>
+    </svg>
+  ),
+};
